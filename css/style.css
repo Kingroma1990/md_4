@@ -28,14 +28,6 @@
 .menu a:hover {
   color: #1abc9c;
 }
-.page__logo::first-letter {
-  color: #1abc9c;
-}
-.menu a {
-  font-size: 14px;
-
-  font-weight: 900;
-}
 
 .menu {
   float: right;
@@ -46,9 +38,12 @@
   font-family: "Roboto", sans-serif;
 }
 
-.menu li {
+.menu-link {
   float: left;
   padding-right: 0;
+  font-size: 14px;
+
+  font-weight: 900;
 }
 .menu li:not(:last-child) {
   margin-right: 30px;
@@ -142,22 +137,19 @@ h2 {
 }
 
 .button {
-  width: 160px;
-  height: 52px;
+  padding: 15px 32px;
   background-color: #4ec6ab;
   color: #ffffff;
   text-align: center;
   font-size: 16px;
   margin-top: 12px;
   margin-bottom: 50px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-.polosa__smoll {
-  margin-left: 0;
-  width: 136px;
-  height: 4px;
-  background-color: #1abc9c;
-  margin-bottom: 22px;
-}
+
 .h5 {
   margin-top: 10px;
   margin-bottom: 8px;
@@ -181,10 +173,23 @@ h2 {
 .blog:nth-of-type(1) {
   margin-left: 38px;
 }
-.polosa {
+
+.strip::after {
+  display: block;
+  content: "";
   width: 165px;
   height: 8px;
   background-color: #1abc9c;
   margin: 0 auto;
   margin-top: 24px;
+}
+.h5::after {
+  display: block;
+  content: "";
+  margin-left: 0;
+  width: 136px;
+  height: 4px;
+  background-color: #1abc9c;
+  margin-bottom: 22px;
+  margin-top: 8px;
 }
